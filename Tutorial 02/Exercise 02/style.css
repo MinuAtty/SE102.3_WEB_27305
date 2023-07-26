@@ -1,0 +1,50 @@
+body {
+	    margin: 0;
+		padding: 0;
+		background: url('wolf in mountains.jpg');
+		background-size: cover;
+		background-position: center;
+		font-family: sans-serif;
+	}
+	.loginbox {
+	    width: 360px;
+		height: 560px;
+		background: #141e3c;
+		color: #fff;
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		box-sizing: border-box;
+	}
+	.black {
+		background-color: #f9850b;
+		text-align: center;
+		margin: 3%;
+	}
+	.yellow {
+		color: #e2bd4e;
+		margin: 2%;
+	}
+	.pink {
+		color: #e2bd4e;
+		text-align: right;
+	}
+	.dark {
+		background: #f9850b;
+		margin: 2%;
+	}
+	.green {
+		background: green;
+		width: 25%;
+		height: 7%;
+		color: white;
+		margin: 5%;
+	}
+	.red {
+		background: red;
+		width: 25%;
+		height: 7%;
+		color: white;
+	}
+	
