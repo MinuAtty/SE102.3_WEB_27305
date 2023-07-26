@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title> Display the Year of Birth </title>
+    </head>
+    <body>
+        <button onclick="YearOfBirth()"> Click Here! </button>
+
+    <script>
+      function YearOfBirth() {
+        const nicNumber = prompt("Enter the Student's NIC number:");
+
+        if (nicNumber.length === 12 && nicNumber.match(/^\d+$/) !== null) {
+          const birthYear = nicNumber.substring(0, 4);
+          alert(`Year of Birth: ${birthYear}`);
+        } else {
+          alert(
+            "Invalid NIC number!"
+          );
+        }
+      }
+	</script>
+</body>
+</html>

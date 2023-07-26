@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title> Calculate Grade </title>
+</head>
+<body>
+  <script>
+    function calculateGrade() {
+      var marks = [];
+      var sum = 0;
+      for (var i = 0; i < 5; i++) {
+        var mark = parseFloat(prompt("Enter mark " + (i + 1)));
+        marks.push(mark);
+        sum += mark;
+      }
+
+      var average = sum / 5;
+      alert("Sum is: " + sum);
+      alert("Average is: " + average);
+      
+	  if (average > 30) {
+        alert("Congrats! You passed.");
+      } else {
+        alert("Better luck next time.");
+      }
+    }
+  </script>
+
+  <button onclick="calculateGrade()"> GRADE </button>
+</body>
+</html>

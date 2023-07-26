@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title> Display the Day </title>
+    </head>
+    <body>
+        <script>
+           var userInput = prompt("Enter a number from 1 to 17:");
+           var number = parseInt(userInput);
+              if (number >= 1 && number <= 17) {
+                var daysOfWeek = [
+				    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ];
+           var dayIndex = (number - 1) % 7;
+           var day = daysOfWeek[dayIndex];
+              alert("The day is: " + day);
+           } else {
+              alert("Invalid input! Please enter a number from 1 to 17.");
+           }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title> Mathematical Operations </title>
+    </head>
+    <body>
+        <script>
+           function displayResult(result) {
+              alert("The result is: " + result);
+           }
+
+function addition() {
+    let num1 = parseFloat(prompt("Enter the first number for addition:"));
+    let num2 = parseFloat(prompt("Enter the second number for addition:"));
+    let result = num1 + num2;
+    displayResult(result);
+}
+
+function subtraction() {
+    let num1 = parseFloat(prompt("Enter the first number for subtraction:"));
+    let num2 = parseFloat(prompt("Enter the second number for subtraction:"));
+    let result = num1 - num2;
+    displayResult(result);
+}
+
+function multiplication() {
+    let num1 = parseFloat(prompt("Enter the first number for multiplication:"));
+    let num2 = parseFloat(prompt("Enter the second number for multiplication:"));
+    let result = num1 * num2;
+    displayResult(result);
+}
+
+function division() {
+    let num1 = parseFloat(prompt("Enter the first number for division:"));
+    let num2 = parseFloat(prompt("Enter the second number for division:"));
+    
+    if (num2 === 0) {
+        alert("Error: Cannot divide by zero!");
+    } else {
+        let result = num1 / num2;
+        displayResult(result);
+    }
+}
+
+function main() {
+    let operation = prompt("Choose the operation: Addition (+), Subtraction (-), Multiplication (*), Division (/)").trim().toLowerCase();
+
+    switch (operation) {
+        case 'addition':
+        case '+':
+            addition();
+            break;
+        case 'subtraction':
+        case '-':
+            subtraction();
+            break;
+        case 'multiplication':
+        case '*':
+            multiplication();
+            break;
+        case 'division':
+        case '/':
+            division();
+            break;
+        default:
+            alert("Invalid operation!");
+    }
+}
+
+main();
+        </script>
+    </body>
+</html>
