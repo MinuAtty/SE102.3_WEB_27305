@@ -1,0 +1,71 @@
+<html>
+<head>
+  <title> Registration Form </title>
+  <style>
+    h2 {
+      text-align: center;
+    }
+    body {
+      font-family: Arial, sans-serif;
+	  border: 2px solid black;
+	  padding: 10px;
+	  margin-top: 50px;
+	  margin-left: 50px;
+	  margin-right: 980px;
+	  margin-bottom: 550px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input {
+      margin-bottom: 15px;
+    }
+    table {
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h2> Registration Form </h2>
+  <form action="phpprocess01.php" method="post">
+    
+	<label for="firstname"> First Name: </label> 
+	<input type="text" id="firstname" name="firstname">
+	
+	<label for="lastname"> Last Name: </label>
+    <input type="text" id="lastname" name="lastname">
+      
+    <label for="username"> Username: </label>
+    <input type="text" id="username" name="username">
+    
+	<label for="password"> Password: </label>
+    <input type="password" id="password" name="password">
+          
+    <label for="gender"> Gender: </label>
+    <input type="radio" id="gender" name="gender" value="Male"> Male
+    <input type="radio" id="gender" name="gender" value="Female"> Female
+        
+    <label for="academicYear"> Academic Year: </label>
+        <select id="academicYear" name="academicYear">
+            <option value="Year"> Year </option>
+			<option value="1st Year"> 1st Year </option>
+			<option value="2nd Year"> 2nd Year </option>
+            <option value="3rd Year"> 3rd Year </option>
+         </select> <br> <br>
+
+    <label for="email"> Email: </label>
+    <input type="email" id="email" name="email">
+
+    <label for="phoneNo"> Phone No: </label>
+    <input type="tel" id="phoneNo" name="phoneNo">
+
+    <br> <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
