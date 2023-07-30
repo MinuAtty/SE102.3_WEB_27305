@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title> Add Rows to Table </title>
+  </head>
+  <body>
+    <table id="myTable" border="1">
+      <tr>
+        <td> Row 1 cell 1 </td>
+        <td> Row 1 cell 2 </td>
+      </tr>
+      <tr>
+        <td> Row 2 cell 1 </td>
+        <td> Row 2 cell 2</td>
+      </tr>
+    </table>
+
+    <button onclick="addRow()"> Insert row </button>
+
+    <script>
+      function addRow() {
+        const table = document.getElementById("myTable");
+        const newRow = table.insertRow(table.rows.length);
+        const cell1 = newRow.insertCell(0);
+        const cell2 = newRow.insertCell(1);
+        cell1.innerHTML = "New Cell 1";
+        cell2.innerHTML = "New Cell 2";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Enable/Disable Video on Mouseover</title>
+</head>
+<body>
+    <div>
+        <h1>Mouse over the video to play</h1>
+        <video id="myVideo" width="320" height="240" controls>
+            <source src="MAVKA. THE FOREST SONG. Official Trailer.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        function enableVideo() {
+            const video = document.getElementById('myVideo');
+            video.play();
+        }
+
+        function disableVideo() {
+            const video = document.getElementById('myVideo');
+            video.pause();
+        }
+
+        const videoElement = document.getElementById('myVideo');
+
+        videoElement.addEventListener('mouseover', enableVideo);
+        videoElement.addEventListener('mouseout', disableVideo);
+    </script>
+</body>
+</html>

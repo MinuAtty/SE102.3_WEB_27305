@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title> Change Table Border </title>
+</head>
+<body>
+    <form>
+        <label for="borderInput"> Enter border value (0 or greater): </label>
+        <input type="number" id="borderInput" min="0" step="1">
+        <button type="button" onclick="changeTableBorder()"> Apply Border </button>
+    </form>
+    <br>
+    <table id="myTable" border="1">
+        <tr>
+            <td> Cell 1 </td>
+            <td> Cell 2 </td>
+            <td> Cell 3 </td>
+        </tr>
+        <tr>
+            <td> Cell 4 </td>
+            <td> Cell 5 </td>
+            <td> Cell 6 </td>
+        </tr>
+    </table>
+
+    <script>
+        function changeTableBorder() {
+            const borderInput = document.getElementById('borderInput');
+            const newBorderValue = parseInt(borderInput.value);
+
+            if (!isNaN(newBorderValue) && newBorderValue >= 0) {
+                const myTable = document.getElementById('myTable');
+                myTable.style.border = `${newBorderValue}px solid black`;
+            } else {
+                alert("Please enter a valid border value (0 or greater).");
+            }
+        }
+    </script>
+</body>
+</html>
